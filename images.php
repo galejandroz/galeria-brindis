@@ -81,7 +81,10 @@ function imageToFile($im, $fileName, $quality = 80){
  
 $total = 0;
 
-foreach (glob("fotos/*.JPG") as $nombre_fichero) {
+//PARA ARCHIVOS .JPG
+$extensionFotos = 'JPG';
+
+foreach (glob('fotos/*.'.$extensionFotos) as $nombre_fichero) {
 
 	$idrand++;
 	
